@@ -5,6 +5,8 @@
   list-style: none;
 }
 body {
+  height: 100vh;
+  width: 100%;
   font-size: 16px;
   padding: 0;
   margin: 0;
@@ -62,7 +64,7 @@ nav {
 
 .card {
   margin-top: 250px;
-  margin-left: 1250px;
+  margin-left: 61%;
   border-radius: 20px;
   box-shadow: 0px 1px 10px 0px rgba(5, 5, 5, 0.13);
   text-align: center;
@@ -88,21 +90,20 @@ nav {
 }
 
 /* Responsive */
+@media screen and (max-width: 1150px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     padding: 20px 5%;
   }
-
-  .navlist a {
-    font-size: 12px;
-  }
 }
 
-/* Navegação Responsiva */
 @media screen and (max-width: 600px) {
-  /* ... Outras regras de estilo existentes ... */
-
-  /* Exibir/ocultar menu ao clicar no ícone do menu */
   #menu-icon {
     display: block;
   }
@@ -118,7 +119,6 @@ nav {
     transform: translateY(0);
   }
 
-  /* Estilo de navegação responsiva */
   nav.active {
     background: rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -131,36 +131,17 @@ nav {
     justify-content: flex-start;
   }
 
-  /* Card Responsivo */
   .card {
-    margin-top: 100px;
+    margin-top: 250px;
     margin-left: auto;
-    margin-right: auto; /* Centraliza horizontalmente */
+    margin-right: auto;
     border-radius: 20px;
     box-shadow: 0px 1px 10px 0px rgba(5, 5, 5, 0.13);
     text-align: center;
     cursor: pointer;
-    width: 90%; /* Largura máxima */
-    max-width: 400px; /* Largura máxima para evitar que o card fique muito largo */
-    height: auto; /* Altura automática com base no conteúdo */
+    width: 90%;
+    max-width: 400px;
+    height: auto; 
     backdrop-filter: blur(15px);
-  }
-  .hero {
-    height: 160vh;
-    width: 100%;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.3)
-      ),
-      url(./img/anabermes19.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow-y: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative; /* Adicionado */
   }
 }
