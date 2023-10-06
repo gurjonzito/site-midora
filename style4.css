@@ -75,6 +75,7 @@ nav {
 }
 .card{
 	margin-top: 12rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -127,14 +128,16 @@ nav {
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
-    nav {
-        padding: 20px 5%;
+@media screen and (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-	.cards{
-		grid-template-columns: repeat(2, 1fr);
-	}
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
   
   @media screen and (max-width: 600px) {
@@ -167,15 +170,5 @@ nav {
 	
 	h1 {
 		margin-top: 9rem;
-	}
-
-	.cards{
-		grid-template-columns: repeat(1, 1fr);
-	}
-  }
-
-  @media screen and (max-width: 392px) {
-	.card{
-		margin-top: 16rem;
 	}
   }
