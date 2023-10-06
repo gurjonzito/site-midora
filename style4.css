@@ -140,7 +140,7 @@ nav {
     }
 }
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	#menu-icon {
 	  display: block;
 	}
@@ -171,4 +171,10 @@ nav {
 	h1 {
 		margin-top: 9rem;
 	}
+
+@media screen and (max-width: 392px) {
+        .card {
+            margin-top: 15rem;
+        }
+    }
   }
