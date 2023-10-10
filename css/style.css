@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   color: black;
-  background: url(./img/midorabackground2.jpeg) no-repeat;
+  background: url(../img/midorabackground2.jpeg) no-repeat;
   background-size: cover;
 }
 
@@ -51,7 +51,7 @@ nav {
 }
 
 .navlist a:hover {
-  color: blue;
+  color: rgb(88, 88, 121);
 }
 
 #menu-icon {
